@@ -1,5 +1,5 @@
 import React from 'react';
-import { Target, TrendingUp, ShieldCheck } from 'lucide-react';
+import { Target, TrendingUp, ShieldCheck, Monitor } from 'lucide-react';
 
 export const About: React.FC = () => {
   return (
@@ -33,7 +33,7 @@ export const About: React.FC = () => {
             <div className="grid gap-6">
               {[
                 { icon: ShieldCheck, text: "Professional brand identity" },
-                { icon: Monitor, text: "Strong online presence" }, // Used Monitor locally here, needs import or standard svg
+                { icon: Monitor, text: "Strong online presence" },
                 { icon: TrendingUp, text: "Creative digital communication" }
               ].map((item, idx) => (
                 <div key={idx} className="flex items-center gap-4 bg-gray-50 p-4 rounded-xl border border-gray-100 transition-colors hover:border-blue-200 hover:bg-blue-50">
@@ -50,6 +50,3 @@ export const About: React.FC = () => {
     </section>
   );
 };
-
-// Quick fix for the missing icon import
-import { Monitor } from 'lucide-react';
